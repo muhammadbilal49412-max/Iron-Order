@@ -1,0 +1,150 @@
+/*Root of custom colours */
+:root {
+  --crimson: #b00020;
+  --ivory: #e8dfc9;
+  --steel: #777777;
+  --gold: #a88945;
+  --charcoal: #171717;
+  --iron-red: #8b0000;
+  --black: #0a0a0a;
+  --white: #f5f5f5;
+  --black2: #111111;
+  --copper: rgba(0, 122, 88, 1);
+  --ceasium: rgba(59, 91, 143, 1);
+  --sunset: rgba(168, 91, 22, 1);
+}
+/*Entire body/Background*/
+body {
+  background-color: var(--black);
+  color: var(--crimson);
+  text-shadow: -2px -1px 5px var(--copper);
+}
+/*Central card on the starting page*/
+.head {
+  display: flex; /*Change to flex */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto 0;
+  gap: 20px;
+  box-sizing: border-box;
+  min-height: 500px;
+  width: min(500px, 90%);
+  border: 1px solid var(--copper);
+  box-shadow: 0px 0px 15px var(--copper);
+  background: var(--black);
+  transition: transform 0.3s ease;
+  border-radius: 30px;
+} /*Styling the card*/
+.head:hover {
+  text-shadow: -2px -1px 3px var(--copper);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px var(--copper);
+  transform: perspective(500px) translateZ(30px);
+} /*makes the card hover */
+.head h1 {
+  margin: 0;
+}
+.head button {
+  font-size: large;
+  width: 100px;
+  transition: transform 0.3s ease;
+  color: var(--crimson);
+  background: var(--black);
+  box-shadow: 0px 0px 4px var(--copper);
+  text-shadow: -2px -1px 5px var(--copper);
+  padding: 10px;
+} /*Styling button*/
+.head button:hover {
+  transform: perspective(500px) translateZ(50px);
+} /*Makes button hover*/
+/*Class of Choice buttons & Central display*/
+.game {
+  display: none; /*Change to none*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 50px auto 0;
+  min-height: 600px;
+  width: 1000px;
+  border: 1px solid var(--copper);
+  box-shadow: 0px 0px 15px var(--copper);
+  gap: 10px;
+  text-align: center;
+  border-radius: 30px;
+} /*Container of choice buttons and central display*/
+.play {
+  display: none; /*Change to none*/
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  margin-top: 150px;
+} /*Container of choice buttons*/
+.play button {
+  width: 130px;
+  height: 130px;
+  font-size: 5rem;
+  font-weight: lighter;
+  color: var(--crimson);
+  background: var(--black);
+  border: 1px solid var(--copper);
+  box-shadow: 0px 0px 10px var(--copper);
+  transition: transform 0.3s ease;
+  text-shadow: -2px -3 px 5px var(--copper);
+} /*Styling choice buttons*/
+.play button:hover {
+  transform: perspective(100px) translateZ(5px);
+} /*Makes control hover*/
+.moves {
+  margin-top: 0px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+} /*Result Display*/
+.moves h1 {
+  margin: 0;
+} /*Removes preset gap between text*/
+.had {
+  font-weight: lighter;
+  font-size: 6rem;
+  transform: rotate(90deg);
+} /*Player Side*/
+.hand {
+  font-weight: lighter;
+  font-size: 6rem;
+  transform: rotate(-90deg);
+} /*Computer Side*/
+/*HUD Display*/
+.hud {
+  display: none; /*Change to none*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 500px;
+  width: 400px;
+  margin: 100px auto 0;
+  border: 1px solid var(--copper);
+  gap: 30px;
+  box-shadow: 0px 0px 15px var(--copper);
+  border-radius: 30px;
+} /*Entire Hud Container*/
+.hud h2 {
+  margin: 0;
+} /*Hud Texts*/
+.hud button {
+  width: 290px;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  background: var(--black);
+  color: var(--crimson);
+  border: 1px solid var(--copper);
+  box-shadow: 0px 0px 10px var(--copper);
+} /*Play Again Button*/
+.hud button:hover{
+  transform: perspective(100px) translateZ(3px);
+} /*126 + 43 + 150 = 319 lines of code*/

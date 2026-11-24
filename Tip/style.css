@@ -1,0 +1,35 @@
+body {
+  background-color: wheat;
+}
+.main {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 60px;
+  width: 500px;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 200px;
+  font-size: large;
+  font-weight: bold;
+  gap: 15px;
+  margin-top: 50px;
+}
+.inp {
+  padding: 5px;
+  margin-top: 0px;
+}
+.top {
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.h {
+  text-align: center;
+}
+.total {
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 10px;
+}
